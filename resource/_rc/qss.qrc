@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>qss/mainWindows_light.qss</file>
+        <file>qss/mainWindows_dark.qss</file>
+        <file>qss/navigationBaseInterface_dark.qss</file>
+        <file>qss/navigationBaseInterface_light.qss</file>
+        <file>qss/tabInterface_dark.qss</file>
+        <file>qss/tabInterface_light.qss</file>
+        <file>qss/fileListWidget_light.qss</file>
+        <file>qss/fileListWidget_dark.qss</file>
+        <file>qss/homeItemLabel_light.qss</file>
+        <file>qss/homeItemLabel_dark.qss</file>
+        <file>qss/demucsInterface_light.qss</file>
+        <file>qss/demucsInterface_dark.qss</file>
+        <file>qss/outputGroupWidget_light.qss</file>
+        <file>qss/outputGroupWidget_dark.qss</file>
+        <file>qss/processPageInterface_light.qss</file>
+        <file>qss/processPageInterface_dark.qss</file>
+        <file>qss/TranscribeParamItemWidget_dark.qss</file>
+        <file>qss/TranscribeParamItemWidget_light.qss</file>
+        <file>qss/transcribePageInterface_light.qss</file>
+        <file>qss/transcribePageInterface_dark.qss</file>
+        <file>qss/aboutPageInterface_light.qss</file>
+        <file>qss/aboutPageInterface_dark.qss</file>
+        <file>qss/modelLoad_light.qss</file>
+        <file>qss/modelLoad_dark.qss</file>
+        <file>qss/settingPageInterface_light.qss</file>
+        <file>qss/settingPageInterface_dark.qss</file>
+    </qresource>
+</RCC>

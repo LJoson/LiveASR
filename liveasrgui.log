@@ -1,0 +1,101 @@
+
+liveasr_GUI: 0.1.0
+==========2024-09-23_13:59:40==========
+==========Start==========
+
+current computer language region-format: zh_CN
+language: zh
+
+==========2024-09-23_13:59:52==========
+==========LoadModel==========
+
+    -decoder_model_size_or_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/decoder-epoch-99-avg-1.onnx
+    -encoder_model_size_or_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/encoder-epoch-99-avg-1.onnx
+    -joiner_model_size_or_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/joiner-epoch-99-avg-1.onnx
+    -token_file_size_or_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/tokens.txt
+    -rule_fsts_file_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/itn_zh_number.fst
+    -hotwords_file_path: E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/hotwords.txt
+    -hotwords_score: 1.5
+    -device: cpu
+    -device_index: 0
+    -sample_rate: 16000
+    -cpu_threads: 4
+    -num_workers: 2
+    -use_endpoint: True
+
+Load over
+    -host: localhost
+    -port: 5000
+    -nn_pool_size: 1
+    -max_wait_ms: 10.0
+    -max_batch_size: 3
+    -max_message_size: 1048576
+    -max_queue_size: 32
+    -max_active_connections: 200
+2024-09-23 14:00:00,594 INFO [streaming_server.py:252] No certificate provided
+2024-09-23 14:00:00,676 INFO [server.py:711] server listening on [::]:5000
+2024-09-23 14:00:00,676 INFO [server.py:711] server listening on 0.0.0.0:5000
+2024-09-23 14:00:00,676 INFO [streaming_server.py:278] Please visit one of the following addresses:
+
+  http://localhost:5000
+
+Since you are not providing a certificate, you cannot use your microphone from within the browser using public IP addresses. Only localhost can be used.You also cannot use 0.0.0.0 or 127.0.0.1
+启动中....
+WebSocket服务启动完成
+2024-09-23 14:00:02,912 INFO [server.py:646] connection open
+2024-09-23 14:00:02,915 INFO [streaming_server.py:328] Connected: ('::1', 9071, 0, 0). Number of connections: 1/200
+2024-09-23 14:00:37,946 INFO [streaming_server.py:312] Disconnected: ('::1', 9071, 0, 0). Number of connections: 0/200
+2024-09-23 14:00:37,946 ERROR [server.py:242] connection handler failed
+Traceback (most recent call last):
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 304, in handle_connection
+    await self.handle_connection_impl(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 339, in handle_connection_impl
+    samples = await self.recv_audio_samples(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 403, in recv_audio_samples
+    message = await socket.recv()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-09-23 14:00:37,947 INFO [server.py:268] connection closed
+2024-09-23 14:03:26,159 INFO [server.py:646] connection open
+2024-09-23 14:03:26,159 INFO [streaming_server.py:328] Connected: ('::1', 9234, 0, 0). Number of connections: 1/200
+2024-09-23 14:03:37,748 INFO [streaming_server.py:312] Disconnected: ('::1', 9234, 0, 0). Number of connections: 0/200
+2024-09-23 14:03:37,748 ERROR [server.py:242] connection handler failed
+Traceback (most recent call last):
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 304, in handle_connection
+    await self.handle_connection_impl(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 339, in handle_connection_impl
+    samples = await self.recv_audio_samples(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 403, in recv_audio_samples
+    message = await socket.recv()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-09-23 14:03:37,750 INFO [server.py:268] connection closed
+2024-09-23 14:04:40,983 INFO [server.py:646] connection open
+2024-09-23 14:04:40,983 INFO [streaming_server.py:328] Connected: ('::1', 9315, 0, 0). Number of connections: 1/200
+2024-09-23 14:04:45,974 INFO [streaming_server.py:312] Disconnected: ('::1', 9315, 0, 0). Number of connections: 0/200
+2024-09-23 14:04:45,974 ERROR [server.py:242] connection handler failed
+Traceback (most recent call last):
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 304, in handle_connection
+    await self.handle_connection_impl(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 339, in handle_connection_impl
+    samples = await self.recv_audio_samples(socket)
+  File "e:\BaiduNetdiskDownload\dev\desktop\learningsource\GlimmerLab\work\LiveASR\UI\streaming_server.py", line 403, in recv_audio_samples
+    message = await socket.recv()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "d:\Miniconda\envs\work\lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)
+2024-09-23 14:04:45,975 INFO [server.py:268] connection closed

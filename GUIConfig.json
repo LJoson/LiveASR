@@ -1,0 +1,35 @@
+{
+    "theme": "light",
+    "model_param": {
+        "localModel": true,
+        "decoder_model": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/decoder-epoch-99-avg-1.onnx",
+        "encoder_model": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/encoder-epoch-99-avg-1.onnx",
+        "joiner_model": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/joiner-epoch-99-avg-1.onnx",
+        "token_file": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/tokens.txt",
+        "rule_fsts_file": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/itn_zh_number.fst",
+        "hotwords_file": "E:/BaiduNetdiskDownload/dev/desktop/learningsource/GlimmerLab/work/LiveASR/hotwords.txt",
+        "hotwords_score": "1.5",
+        "device": 0,
+        "deviceIndex": "0",
+        "preciese": 0,
+        "thread_num": "4",
+        "num_worker": "2",
+        "use_endpoint": true
+    },
+    "server_param": {
+        "port": "5000",
+        "nn_pool_size": "1",
+        "max_batch_size": "3",
+        "max_message_size": "1048576",
+        "max_wait_ms": "10",
+        "max_queue_size": "32",
+        "max_active_connections": "200"
+    },
+    "setting": {
+        "saveConfig": true,
+        "autoLoadModel": true,
+        "language": 2,
+        "autoClearTempFiles": true,
+        "themeColor": "#152cff"
+    }
+}

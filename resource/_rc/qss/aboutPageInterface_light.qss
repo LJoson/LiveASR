@@ -1,0 +1,25 @@
+AboutPageNavigationInterface{
+    background: transparent;
+}
+
+#mainObject {
+    background-color: rgb(249, 249, 249);
+}
+
+QScrollArea {
+    border: none;
+}
+
+#imageViewer{
+    background-color: transparent;
+}
+
+TitleLabel{
+    font-size: 30px;
+    background-color: transparent;
+}
+
+DisplayLabel{
+    font-size: 17px;
+    background-color: transparent;
+}

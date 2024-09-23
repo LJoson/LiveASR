@@ -1,0 +1,10 @@
+tmp*
+.vscode
+.idea
+__pycache__
+*.pyc
+*.exe
+build
+dist
+log
+tests

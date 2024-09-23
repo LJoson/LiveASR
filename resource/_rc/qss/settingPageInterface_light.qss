@@ -1,0 +1,7 @@
+#mainObject {
+    background-color: rgb(249, 249, 249);
+}
+
+QScrollArea {
+    border: none;
+}
