@@ -68,3 +68,30 @@ python3 LiveASRGUI.py
 ### 许可证
 
 本项目遵循 GNU 通用公共许可证（GPL）。详情请参阅 [LICENSE](LICENSE) 文件。
+
+### 欢迎贡献
+
+我们非常欢迎任何形式的贡献，包括但不限于：
+
+- 提交问题和建议
+- 改进文档
+- 添加新功能
+- 修复 bug
+- 优化性能
+
+如果您想为项目做出贡献，请遵循以下步骤：
+
+1. Fork 本仓库
+2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 开启一个 Pull Request
+
+### 反馈与建议
+
+如果您在使用过程中遇到任何问题，或有任何建议和意见，欢迎通过以下方式联系我们：
+
+- 在 GitHub 上提交 [Issue](https://github.com/yourusername/LiveASR/issues)
+- 发送邮件至：your-email@example.com
+
+您的反馈对我们非常重要，将帮助我们不断改进和完善这个项目。
