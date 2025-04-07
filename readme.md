@@ -91,7 +91,7 @@ python3 LiveASRGUI.py
 
 如果您在使用过程中遇到任何问题，或有任何建议和意见，欢迎通过以下方式联系我们：
 
-- 在 GitHub 上提交 [Issue](https://github.com/yourusername/LiveASR/issues)
-- 发送邮件至：your-email@example.com
+- 在 GitHub 上提交 [Issue](https://github.com/LJoson/LiveASR/issues)
+- 发送邮件至：1250377062@qq.com
 
 您的反馈对我们非常重要，将帮助我们不断改进和完善这个项目。
