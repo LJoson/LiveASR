@@ -6,7 +6,6 @@ import os
 from typing import List
 import time
 import codecs
-import torch
 import numpy as np
 import json
 import hashlib

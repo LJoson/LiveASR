@@ -11,6 +11,7 @@
 ### 系统安装步骤
 
 ```shell
+git clone https://github.com/LJoson/LiveASR.git
 # 首先安装必要的python库
 cd ./LiveASR
 pip3 install -r requirements.txt
@@ -18,7 +19,7 @@ pip3 install -r requirements.txt
 
 ### 系统运行步骤
 
-在安装完必要的库之后，就可以运行了，主要的运行文件是 LiveASRGUI.py，运行该文件即可启动系统。
+在安装完必要的库之后，就可以运行了，主要的运行文件是 LiveASRGUI.py，运行该文件即可启动系统。（由于gpu部分功能未测试，所以暂时没有使用gpu）
 
 ```shell
 python3 LiveASRGUI.py

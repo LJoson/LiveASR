@@ -7,7 +7,9 @@ nltk
 CTranslate2>=3.21.0
 joblib==1.2.0
 pyside6 > 6.5.0
-pyannote
 transformers
 webvtt-py
 sherpa-onnx
+websockets
+sounddevice
+opencc

@@ -29,10 +29,6 @@ from qfluentwidgets import (
                             , isDarkTheme
                         )
 
-from faster_whisper.transcribe import TranscriptionInfo
-
-
-import torch
 
 from .config import (
                     Task_list
@@ -821,9 +817,14 @@ class MainWindows(UIMainWin):
 
             if self.page_setting.switchButton_autoClearTempFiles.isChecked():
                 try:
-                    temp_list = os.listdir(r"./temp")
+                    temp_dir = os.path.abspath(r"./temp")
+                    # 检查临时目录是否存在，如果不存在则创建
+                    if not os.path.exists(temp_dir):
+                        os.makedirs(temp_dir)
+                        print("created temp directory")
+
+                    temp_list = os.listdir(temp_dir)
                     if len(temp_list) > 0:
-                        temp_dir = os.path.abspath(r"./temp")
                         temp_cmd = temp_dir + "\\" + "*.srt"
                         os.system(f"del {temp_cmd}")
                         print("cleared temp files")
