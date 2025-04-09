@@ -45,6 +45,7 @@ python3 LiveASRGUI.py
 #### 核心语音识别引擎
 - [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) - 基于 ONNX 的语音识别工具包，提供了高效的语音识别功能
 - [Whisper](https://github.com/openai/whisper) - OpenAI 开发的开源语音识别模型，为语音识别技术提供了重要参考
+- [speech-to-text](https://github.com/reriiasu/speech-to-text) - 基于 faster-whisper 的实时语音转文字项目，提供了优秀的实时转录功能
 
 #### 中文语音识别相关
 - [FunASR](https://github.com/modelscope/FunASR) - 阿里巴巴达摩院开源的中文语音识别工具包
