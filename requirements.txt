@@ -13,3 +13,4 @@ sherpa-onnx
 websockets
 sounddevice
 opencc
+cn2an
